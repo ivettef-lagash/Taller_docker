@@ -4,7 +4,7 @@ WORKDIR /usr/src/index
 ENV PATH /usr/src/index/node_modules/.bin:$PATH
 COPY package.json /usr/src/index/package.json
 RUN npm install --silent
-RUN npm install react-scripts@16.12.0 -g --silent
+RUN npm install react-scripts@3.2.0 -g --silent
 COPY . /usr/src/index
 RUN npm run build
 
