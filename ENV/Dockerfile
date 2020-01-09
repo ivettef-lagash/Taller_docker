@@ -2,6 +2,8 @@ FROM node:10
 # Create app directory
 
 ENV ENVIROMENT='PRODUCCION'
+ENV PORT = 5200
+ENV HOST = 0.0.0.0
 WORKDIR /usr/src/app
 
 # Install app dependencies
