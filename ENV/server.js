@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-let { HOST, PORT, ENVIROMENT } = process.env;
+let { HOST, PORT, ENVIROMENTS } = process.env;
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => {
   res.send(
-    `API construida para Lagash University se encuentra arriba en ambiente ${ENVIROMENT ||
+    `API construida para Lagash University se encuentra arriba en ambiente ${ENVIROMENTS ||
       "No definido"}`
   );
 });
