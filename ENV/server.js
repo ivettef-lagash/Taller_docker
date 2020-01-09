@@ -1,8 +1,3 @@
-const environment =
-  process.env.APPLICATION_ENV === "local" ? "local.env" : ".env";
-
-require("dotenv").config({ path: environment });
-
 const express = require("express");
 const cors = require("cors");
 let { HOST, PORT, ENVIROMENT } = process.env;
